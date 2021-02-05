@@ -1,5 +1,6 @@
 <template>
   <v-container mb-12>
+    Joke of the day
     {{ joke.setup }}
     <br />
     {{ joke.delivery }}
