@@ -3337,7 +3337,7 @@ async function setContext(app, context) {
   // If context not defined, create it
   if (!app.context) {
     app.context = {
-      isStatic: true,
+      isStatic: false,
       isDev: false,
       isHMR: false,
       app,
@@ -3347,9 +3347,13 @@ async function setContext(app, context) {
       env: {}
     }; // Only set once
 
-    if (false) {}
+    if ( true && context.req) {
+      app.context.req = context.req;
+    }
 
-    if (false) {}
+    if ( true && context.res) {
+      app.context.res = context.res;
+    }
 
     if (context.ssrContext) {
       app.context.ssrContext = context.ssrContext;
@@ -4784,10 +4788,6 @@ const layouts = {
 
     isFetching() {
       return this.nbFetching > 0;
-    },
-
-    isPreview() {
-      return Boolean(this.$options.previewData);
     }
 
   },
@@ -5497,9 +5497,7 @@ const createNext = ssrContext => opts => {
     routePath: ''
   }; // Remove query from url is static target
 
-  if ( true && ssrContext.url) {
-    ssrContext.url = ssrContext.url.split('?')[0];
-  } // Public runtime config
+  if (false) {} // Public runtime config
 
 
   ssrContext.nuxt.config = ssrContext.runtimeConfig.public; // Create the app definition and the instance (created for each request)
