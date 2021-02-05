@@ -44,8 +44,6 @@ export default {
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {
-        // baseURL: 'https://ettcars.herokuapp.com/api',
-        // baseURL: 'https://official-joke-api.appspot.com',
         baseURL: "https://v2.jokeapi.dev",
     },
 
