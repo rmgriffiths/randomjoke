@@ -3,21 +3,18 @@
     "name": "random",
     "path": "/random",
     "component": "/Users/rgriffiths/Documents/Joker/pages/random.vue",
-    "chunkName": "pages/random",
-    "_name": "_a8ae3eb4"
+    "chunkName": "pages/random"
   },
   {
     "name": "Jokes-joke",
     "path": "/Jokes/:joke?",
     "component": "/Users/rgriffiths/Documents/Joker/pages/Jokes/_joke.vue",
-    "chunkName": "pages/Jokes/_joke",
-    "_name": "_7e0a6f20"
+    "chunkName": "pages/Jokes/_joke"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/rgriffiths/Documents/Joker/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_06aaba3f"
+    "chunkName": "pages/index"
   }
 ]
